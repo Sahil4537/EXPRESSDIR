@@ -14,6 +14,14 @@ app.listen (port , () => {
 //    res.send(code);
 // });
 
-app.get('/', (req, res) => {
-    res.send('GET request to homepage')
-  })
+app.get("/", (req, res) => {
+    res.send('GET request to homepage');
+  });
+
+  app.get("/apple", (req, res) => {
+    res.send('GET request to apple');
+  });
+
+  app.get("/banana", (req, res) => {
+    res.send('GET request to banana');
+  });
